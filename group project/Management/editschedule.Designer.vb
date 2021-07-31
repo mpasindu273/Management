@@ -22,22 +22,13 @@ Partial Class editschedule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.InstituteDataSet = New Management.instituteDataSet()
-        Me.IT_TimeBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.IT_courseBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.IT_courseTableAdapter = New Management.instituteDataSetTableAdapters.IT_courseTableAdapter()
-        Me.TableAdapterManager = New Management.instituteDataSetTableAdapters.TableAdapterManager()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IT_TimeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IT_courseBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -49,16 +40,6 @@ Partial Class editschedule
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'InstituteDataSet
-        '
-        Me.InstituteDataSet.DataSetName = "instituteDataSet"
-        Me.InstituteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'IT_TimeBindingSource
-        '
-        Me.IT_TimeBindingSource.DataMember = "IT_Time"
-        Me.IT_TimeBindingSource.DataSource = Me.InstituteDataSet
         '
         'DataGridView1
         '
@@ -97,27 +78,6 @@ Partial Class editschedule
         Me.Button2.Text = "Reset"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'IT_courseBindingSource
-        '
-        Me.IT_courseBindingSource.DataMember = "IT_course"
-        Me.IT_courseBindingSource.DataSource = Me.InstituteDataSet
-        '
-        'IT_courseTableAdapter
-        '
-        Me.IT_courseTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.adminnoticeTableAdapter = Nothing
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.IT_courseTableAdapter = Me.IT_courseTableAdapter
-        Me.TableAdapterManager.IT_TimeTableAdapter = Nothing
-        Me.TableAdapterManager.ITnoticeTableAdapter = Nothing
-        Me.TableAdapterManager.lecturerTableAdapter = Nothing
-        Me.TableAdapterManager.resultsTableAdapter = Nothing
-        Me.TableAdapterManager.studentTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Management.instituteDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
         'ComboBox1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -142,20 +102,12 @@ Partial Class editschedule
         Me.Name = "editschedule"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "editschedule"
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IT_TimeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IT_courseBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents InstituteDataSet As Management.instituteDataSet
-    Friend WithEvents IT_TimeBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents IT_courseBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents IT_courseTableAdapter As Management.instituteDataSetTableAdapters.IT_courseTableAdapter
-    Friend WithEvents TableAdapterManager As Management.instituteDataSetTableAdapters.TableAdapterManager
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

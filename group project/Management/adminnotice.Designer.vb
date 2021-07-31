@@ -170,7 +170,7 @@ Partial Class adminnotice
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Sienna
-        Me.ClientSize = New System.Drawing.Size(777, 502)
+        Me.ClientSize = New System.Drawing.Size(777, 450)
         Me.Controls.Add(Me.bexit)
         Me.Controls.Add(Me.ltime)
         Me.Controls.Add(Me.ldate)

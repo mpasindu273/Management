@@ -53,12 +53,10 @@ Partial Class editstudent
         Me.bnew = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tsearch = New System.Windows.Forms.TextBox()
-        Me.InstituteDataSet = New Management.instituteDataSet()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.t9 = New System.Windows.Forms.ComboBox()
         Me.combo1 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -396,11 +394,6 @@ Partial Class editstudent
         Me.tsearch.Size = New System.Drawing.Size(132, 23)
         Me.tsearch.TabIndex = 0
         '
-        'InstituteDataSet
-        '
-        Me.InstituteDataSet.DataSetName = "instituteDataSet"
-        Me.InstituteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -476,7 +469,6 @@ Partial Class editstudent
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "editstudent"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -489,7 +481,6 @@ Partial Class editstudent
     Friend WithEvents bclear As System.Windows.Forms.Button
     Friend WithEvents bsearch As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents InstituteDataSet As Management.instituteDataSet
     Friend WithEvents t8 As System.Windows.Forms.TextBox
     Friend WithEvents t7 As System.Windows.Forms.TextBox
     Friend WithEvents t6 As System.Windows.Forms.TextBox

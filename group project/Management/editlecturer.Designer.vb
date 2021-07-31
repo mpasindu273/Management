@@ -22,7 +22,6 @@ Partial Class editlecturer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim Lecturer_nameLabel As System.Windows.Forms.Label
         Dim SubjectLabel As System.Windows.Forms.Label
         Dim CityLabel As System.Windows.Forms.Label
@@ -30,15 +29,12 @@ Partial Class editlecturer
         Dim Phone_noLabel As System.Windows.Forms.Label
         Dim UsernameLabel As System.Windows.Forms.Label
         Dim PWLabel As System.Windows.Forms.Label
-        Dim Label2 As System.Windows.Forms.Label
         Dim Label3 As System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.bclear = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.LecturerBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.InstituteDataSet = New Management.instituteDataSet()
         Me.bdelete = New System.Windows.Forms.Button()
         Me.bsearch = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -65,11 +61,8 @@ Partial Class editlecturer
         Phone_noLabel = New System.Windows.Forms.Label()
         UsernameLabel = New System.Windows.Forms.Label()
         PWLabel = New System.Windows.Forms.Label()
-        Label2 = New System.Windows.Forms.Label()
         Label3 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LecturerBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Lecturer_nameLabel
@@ -144,13 +137,13 @@ Partial Class editlecturer
         '
         'Label2
         '
-        Label2.AutoSize = True
-        Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Label2.Location = New System.Drawing.Point(724, 23)
-        Label2.Name = "Label2"
-        Label2.Size = New System.Drawing.Size(24, 18)
-        Label2.TabIndex = 60
-        Label2.Text = "ID"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(724, 23)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(24, 18)
+        Me.Label2.TabIndex = 60
+        Me.Label2.Text = "ID"
         '
         'Label3
         '
@@ -204,10 +197,6 @@ Partial Class editlecturer
         Me.Button8.Text = "First"
         Me.Button8.UseVisualStyleBackColor = False
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
@@ -219,16 +208,6 @@ Partial Class editlecturer
         Me.DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.Size = New System.Drawing.Size(884, 173)
         Me.DataGridView1.TabIndex = 51
-        '
-        'LecturerBindingSource1
-        '
-        Me.LecturerBindingSource1.DataMember = "lecturer"
-        Me.LecturerBindingSource1.DataSource = Me.InstituteDataSet
-        '
-        'InstituteDataSet
-        '
-        Me.InstituteDataSet.DataSetName = "instituteDataSet"
-        Me.InstituteDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'bdelete
         '
@@ -331,7 +310,6 @@ Partial Class editlecturer
         '
         't1
         '
-        Me.t1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "Lecturer_name", True))
         Me.t1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t1.Location = New System.Drawing.Point(227, 158)
         Me.t1.Name = "t1"
@@ -340,7 +318,6 @@ Partial Class editlecturer
         '
         't3
         '
-        Me.t3.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "City", True))
         Me.t3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t3.Location = New System.Drawing.Point(226, 274)
         Me.t3.Name = "t3"
@@ -349,7 +326,6 @@ Partial Class editlecturer
         '
         't4
         '
-        Me.t4.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "Email", True))
         Me.t4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t4.Location = New System.Drawing.Point(226, 309)
         Me.t4.Name = "t4"
@@ -358,7 +334,6 @@ Partial Class editlecturer
         '
         't5
         '
-        Me.t5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "Phone_no", True))
         Me.t5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t5.Location = New System.Drawing.Point(226, 344)
         Me.t5.MaxLength = 10
@@ -369,7 +344,6 @@ Partial Class editlecturer
         '
         't6
         '
-        Me.t6.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "Username", True))
         Me.t6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t6.Location = New System.Drawing.Point(229, 122)
         Me.t6.Name = "t6"
@@ -378,7 +352,6 @@ Partial Class editlecturer
         '
         't7
         '
-        Me.t7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.LecturerBindingSource1, "PW", True))
         Me.t7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t7.Location = New System.Drawing.Point(225, 378)
         Me.t7.Name = "t7"
@@ -467,7 +440,7 @@ Partial Class editlecturer
         Me.Controls.Add(Me.t2)
         Me.Controls.Add(PWLabel)
         Me.Controls.Add(Me.t7)
-        Me.Controls.Add(Label2)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(UsernameLabel)
         Me.Controls.Add(Me.tid)
         Me.Controls.Add(Me.t6)
@@ -499,8 +472,6 @@ Partial Class editlecturer
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "editlecturer"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LecturerBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InstituteDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -508,7 +479,6 @@ Partial Class editlecturer
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents bclear As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents bdelete As System.Windows.Forms.Button
     Friend WithEvents bsearch As System.Windows.Forms.Button
@@ -517,8 +487,6 @@ Partial Class editlecturer
     Friend WithEvents bcommit As System.Windows.Forms.Button
     Friend WithEvents bnew As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents InstituteDataSet As Management.instituteDataSet
-    Friend WithEvents LecturerBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents t1 As System.Windows.Forms.TextBox
     Friend WithEvents t3 As System.Windows.Forms.TextBox
     Friend WithEvents t4 As System.Windows.Forms.TextBox
@@ -531,4 +499,5 @@ Partial Class editlecturer
     Friend WithEvents tid As System.Windows.Forms.TextBox
     Friend WithEvents t8 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

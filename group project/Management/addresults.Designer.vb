@@ -22,15 +22,12 @@ Partial Class addresults
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ResultsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.bexit = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.ResultsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,10 +40,6 @@ Partial Class addresults
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ResultsBindingSource
-        '
-        Me.ResultsBindingSource.DataMember = "results"
         '
         'bexit
         '
@@ -104,16 +97,12 @@ Partial Class addresults
         Me.Name = "addresults"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "addresults"
-        CType(Me.ResultsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents InstituteDataSet As Management.instituteDataSet
-    Friend WithEvents ResultsBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ResultsTableAdapter As Management.instituteDataSetTableAdapters.resultsTableAdapter
     Friend WithEvents bexit As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView

@@ -26,8 +26,6 @@ Public Class editschedule
     End Sub
 
     Private Sub editschedule_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'InstituteDataSet.IT_course' table. You can move, or remove it, as needed.
-        Me.IT_courseTableAdapter.Fill(Me.InstituteDataSet.IT_course)
         strt()
     End Sub
 
