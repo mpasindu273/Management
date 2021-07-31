@@ -1,0 +1,45 @@
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\Management.exe.config
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\Management.exe
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\Management.pdb
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\Management.xml
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.Start.resources
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.Resources.resources
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.vbproj.GenerateResource.Cache
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.exe
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.xml
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.pdb
+c:\users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.wel.resources
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.mainframe.resources
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\da-DK\Management.resources.dll
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\en\Management.resources.dll
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\bin\Debug\nqo\Management.resources.dll
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.mainframe.da-DK.resources
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.mainframe.en.resources
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\Management.mainframe.nqo.resources
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\da-DK\Management.resources.dll
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\en\Management.resources.dll
+C:\Users\user1\documents\visual studio 2012\Projects\Management\Management\obj\Debug\nqo\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\bin\Debug\Management.exe.config
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.exe
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.xml
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.pdb
+C:\Users\user1\Desktop\Management\Management\bin\Debug\Management.exe
+C:\Users\user1\Desktop\Management\Management\bin\Debug\Management.pdb
+C:\Users\user1\Desktop\Management\Management\bin\Debug\Management.xml
+C:\Users\user1\Desktop\Management\Management\bin\Debug\da-DK\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\bin\Debug\en\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\bin\Debug\nqo\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.Alarm_settings.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.alarm.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.Start.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.wel.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.mainframe.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.Resources.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.notepad.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.mainframe.da-DK.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.mainframe.en.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.mainframe.nqo.resources
+C:\Users\user1\Desktop\Management\Management\obj\Debug\Management.vbproj.GenerateResource.Cache
+C:\Users\user1\Desktop\Management\Management\obj\Debug\da-DK\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\obj\Debug\en\Management.resources.dll
+C:\Users\user1\Desktop\Management\Management\obj\Debug\nqo\Management.resources.dll
