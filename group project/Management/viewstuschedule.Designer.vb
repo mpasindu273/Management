@@ -32,6 +32,7 @@ Partial Class viewstuschedule
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
@@ -41,7 +42,7 @@ Partial Class viewstuschedule
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeight = 30
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
@@ -54,14 +55,14 @@ Partial Class viewstuschedule
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowTemplate.Height = 45
-        Me.DataGridView1.Size = New System.Drawing.Size(1063, 341)
+        Me.DataGridView1.Size = New System.Drawing.Size(817, 341)
         Me.DataGridView1.TabIndex = 0
         '
         'viewstuschedule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1063, 341)
+        Me.ClientSize = New System.Drawing.Size(817, 341)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "viewstuschedule"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

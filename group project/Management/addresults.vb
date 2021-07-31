@@ -75,14 +75,12 @@ Public Class addresults
         strt()
     End Sub
 
-
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-
         Try
             Me.Validate()
             Me.myDA.Update(Me.myDataSet.Tables("MyTable"))
             Me.myDataSet.AcceptChanges()
-            MsgBox("Marks added!")
+            MsgBox("changes saved!")
             lecturemainframe.Show()
             Me.Close()
         Catch
@@ -93,14 +91,6 @@ Public Class addresults
     Private Sub bexit_Click(sender As Object, e As EventArgs) Handles bexit.Click
         lecturemainframe.Show()
         Me.Close()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        For Each item As DataGridViewRow In DataGridView1.Rows
-            item.Cells("MyTable").Value = String.Empty
-        Next
-
-        strt() 'to refresh the datagridview
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
