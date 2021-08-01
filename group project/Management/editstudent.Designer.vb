@@ -56,6 +56,7 @@ Partial Class editstudent
         Me.Label6 = New System.Windows.Forms.Label()
         Me.t9 = New System.Windows.Forms.ComboBox()
         Me.combo1 = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -159,7 +160,7 @@ Partial Class editstudent
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(292, 31)
+        Me.Label1.Location = New System.Drawing.Point(328, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(177, 26)
         Me.Label1.TabIndex = 30
@@ -193,7 +194,7 @@ Partial Class editstudent
         't3
         '
         Me.t3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.t3.Location = New System.Drawing.Point(201, 170)
+        Me.t3.Location = New System.Drawing.Point(201, 208)
         Me.t3.Name = "t3"
         Me.t3.Size = New System.Drawing.Size(318, 23)
         Me.t3.TabIndex = 68
@@ -201,7 +202,7 @@ Partial Class editstudent
         't2
         '
         Me.t2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.t2.Location = New System.Drawing.Point(201, 140)
+        Me.t2.Location = New System.Drawing.Point(201, 178)
         Me.t2.Name = "t2"
         Me.t2.Size = New System.Drawing.Size(318, 23)
         Me.t2.TabIndex = 67
@@ -210,11 +211,11 @@ Partial Class editstudent
         '
         Me.t1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.t1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.t1.Location = New System.Drawing.Point(201, 107)
+        Me.t1.Location = New System.Drawing.Point(201, 139)
+        Me.t1.MaxLength = 5
         Me.t1.Name = "t1"
-        Me.t1.Size = New System.Drawing.Size(91, 23)
+        Me.t1.Size = New System.Drawing.Size(105, 23)
         Me.t1.TabIndex = 0
-        Me.t1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label9
         '
@@ -250,7 +251,7 @@ Partial Class editstudent
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(52, 174)
+        Me.Label4.Location = New System.Drawing.Point(52, 212)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(85, 17)
         Me.Label4.TabIndex = 60
@@ -260,7 +261,7 @@ Partial Class editstudent
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(52, 144)
+        Me.Label3.Location = New System.Drawing.Point(52, 182)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 17)
         Me.Label3.TabIndex = 59
@@ -270,7 +271,7 @@ Partial Class editstudent
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(52, 111)
+        Me.Label2.Location = New System.Drawing.Point(51, 142)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 17)
         Me.Label2.TabIndex = 58
@@ -398,7 +399,7 @@ Partial Class editstudent
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(51, 211)
+        Me.Label6.Location = New System.Drawing.Point(54, 101)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(59, 17)
         Me.Label6.TabIndex = 60
@@ -409,9 +410,9 @@ Partial Class editstudent
         Me.t9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.t9.FormattingEnabled = True
         Me.t9.Items.AddRange(New Object() {"IT", "English"})
-        Me.t9.Location = New System.Drawing.Point(201, 208)
+        Me.t9.Location = New System.Drawing.Point(201, 94)
         Me.t9.Name = "t9"
-        Me.t9.Size = New System.Drawing.Size(318, 24)
+        Me.t9.Size = New System.Drawing.Size(105, 24)
         Me.t9.TabIndex = 79
         '
         'combo1
@@ -424,6 +425,16 @@ Partial Class editstudent
         Me.combo1.Size = New System.Drawing.Size(134, 24)
         Me.combo1.TabIndex = 80
         Me.combo1.Text = "All students"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(312, 142)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(90, 17)
+        Me.Label11.TabIndex = 58
+        Me.Label11.Text = "(Eg; IT001)"
         '
         'editstudent
         '
@@ -455,6 +466,7 @@ Partial Class editstudent
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button8)
@@ -506,4 +518,5 @@ Partial Class editstudent
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents t9 As System.Windows.Forms.ComboBox
     Friend WithEvents combo1 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

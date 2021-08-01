@@ -54,15 +54,15 @@ Partial Class viewstuschedule
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowTemplate.Height = 45
-        Me.DataGridView1.Size = New System.Drawing.Size(817, 341)
+        Me.DataGridView1.RowTemplate.Height = 55
+        Me.DataGridView1.Size = New System.Drawing.Size(871, 402)
         Me.DataGridView1.TabIndex = 0
         '
         'viewstuschedule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(817, 341)
+        Me.ClientSize = New System.Drawing.Size(871, 402)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "viewstuschedule"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

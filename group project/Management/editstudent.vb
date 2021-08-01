@@ -135,6 +135,7 @@ Public Class editstudent
         MsgBox("Record added")
         loaddata()
         dbs.MoveLast()
+        addnewpressed = 0
     End Sub
 
     Sub updat()
@@ -163,12 +164,28 @@ Public Class editstudent
 
     Sub addnew_or_update()
         If addnewpressed = 1 Then
-            addnew()
+            con = New SqlConnection(strAccConn)
+            sql = "Select Student_ID from student Where Student_ID = @id"
+            Dim oleAccCommand As New SqlCommand(sql, con)
+            oleAccCommand.Parameters.AddWithValue("id", t1.Text)
 
-            addnewpressed = 0
+            con.Open()
+            Dim oleAccReader As SqlDataReader = oleAccCommand.ExecuteReader()
+            If oleAccReader.HasRows Then
+                MsgBox("This Student ID already exists!", MessageBoxIcon.Warning)
+                Exit Sub
+            Else
+                addnew()
+            End If
+            oleAccReader.Close()
+            con.Close()
+
         ElseIf addnewpressed = 0 Then
             updat()
         End If
+
+        cancelmode()
+        readon()
     End Sub
 
     Private Sub editstudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -186,6 +203,18 @@ Public Class editstudent
     End Sub
 
     Private Sub bcommit_Click(sender As Object, e As EventArgs) Handles bcommit.Click
+        If t1.TextLength < 5 Then
+            MsgBox("Invalid Student ID! Fill as the example", MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Try
+            Integer.Parse(t1.Text.Substring(2, 3))
+        Catch
+            MsgBox("Invalid Student ID! Fill as the example", MessageBoxIcon.Warning)
+            Exit Sub
+        End Try
+
         Try
             Integer.Parse(t7.Text)
         Catch
@@ -198,9 +227,8 @@ Public Class editstudent
         ElseIf t7.TextLength < 10 Then
             MsgBox("Phone number must have 10 digits!", MessageBoxIcon.Warning)
         Else
+
             addnew_or_update()
-            cancelmode()
-            readon()
         End If
     End Sub
 
@@ -324,11 +352,17 @@ Public Class editstudent
         t4.Text = DateTimePicker1.Text
     End Sub
 
-    Private Sub t1_TextChanged(sender As Object, e As EventArgs) Handles t1.TextChanged
-
-    End Sub
-
     Private Sub combo1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles combo1.SelectedIndexChanged
         loaddata()
+    End Sub
+
+    Private Sub t9_SelectedIndexChanged(sender As Object, e As EventArgs) Handles t9.SelectedIndexChanged
+        If addnewpressed Then
+            If t9.Text = "IT" Then
+                t1.Text = "IT"
+            ElseIf t9.Text = "English" Then
+                t1.Text = "EN"
+            End If
+        End If
     End Sub
 End Class
